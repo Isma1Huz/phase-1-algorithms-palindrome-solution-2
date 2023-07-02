@@ -6,6 +6,16 @@ function isPalindrome(word) {
   Add your pseudocode here
 */
 
+function isPalindrome(string){
+  for(let i = 0; i < string.length / 2; i++){
+    const j = string.length -1 -i
+    const first = string[i]
+    const last = string[j]
+    if(first !== last) return false
+  }
+  return true
+}
+
 /*
   Add written explanation of your solution here
 */
